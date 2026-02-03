@@ -438,6 +438,25 @@ const handleDelete = async (id) => {
   margin-left: 8px;
 }
 
+/* Timeline 样式修复 */
+.tips-card :deep(.ant-timeline) {
+  margin-top: 16px;
+}
+
+.tips-card :deep(.ant-timeline-item) {
+  padding-bottom: 16px;
+}
+
+.tips-card :deep(.ant-timeline-item-content) {
+  margin-left: 24px;
+  margin-top: 0;
+}
+
+.tips-card :deep(.ant-timeline-item-content p) {
+  margin: 0;
+  line-height: 1.6;
+}
+
 @media (max-width: 768px) {
   .icon-selector {
     grid-template-columns: repeat(5, 1fr);
